@@ -19,7 +19,7 @@ public class ConexaoSQL {
         try {
             return DriverManager.getConnection(url, user, password);
         } catch (SQLException e) {
-            System.out.println("Erro de conexão: " + e.getMessage());
+            System.out.println("Erro de conexao: " + e.getMessage());
             return null;
         }
     }
@@ -73,7 +73,7 @@ public class ConexaoSQL {
         ConexaoSQL conexao = new ConexaoSQL();
 
         // Executa query para listar dados de um nome específico
-        conexao.query("Nome Exemplo");
+        conexao.query("teste");
 
         // Insere um novo registro
         conexao.insert("Novo Jogador", 150);
